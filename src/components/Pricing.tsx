@@ -3,57 +3,56 @@ import { Check, ShieldCheck } from "lucide-react";
 
 const packages = [
   {
-    name: "Starter SEO",
-    price: "40k",
+    name: "SEO Blog Writing",
+    price: "From 15k",
     currency: "KES",
-    period: "/month",
-    description: "For startups and local businesses aiming to establish strong foundations.",
+    period: "/mo",
+    description: "Consistent, high-quality blog content engine engineered to rank for target keywords.",
     features: [
-      "Technical SEO Audit",
-      "Local SEO Optimization",
-      "Keyword Research (Up to 20)",
-      "2 SEO Blog Articles/Month",
+      "Semantic Keyword Mapping",
+      "Competitor Gap Analysis",
+      "2-4 SEO Blog Posts per Month",
+      "Internal Linking Structure",
       "On-Page Optimization",
-      "Basic Monthly Reporting"
+      "Meta Titles & Descriptions"
     ],
     highlight: false,
-    cta: "Start Local Growth"
+    cta: "Request Blog Pricing"
   },
   {
-    name: "Business SEO",
-    price: "75k",
+    name: "Website Copywriting",
+    price: "From 45k",
     currency: "KES",
-    period: "/month",
-    description: "For scaling brands needing aggressive growth and wider market capture.",
+    period: "/project",
+    description: "High-converting, SEO-optimized landing pages and core website copy.",
     features: [
-      "Advanced Technical SEO",
-      "Competitor Analysis",
-      "Keyword Research (Up to 50)",
-      "4 High-Intent SEO Articles/Month",
-      "Content Strategy Hubs",
-      "Foundational Link Building",
-      "Conversion Rate Optimization (CRO)"
+      "Target Audience & Intent Research",
+      "Core Pages (Home, About, Services)",
+      "Conversion-Focused Hero Sections",
+      "Persuasive Lead-Capture Copy",
+      "SEO H1/H2/H3 Architecture",
+      "Two Rounds of Revisions"
     ],
     highlight: true,
-    cta: "Scale Your Brand"
+    cta: "Calculate Project Cost"
   },
   {
-    name: "Enterprise SEO",
-    price: "150k+",
+    name: "Elite SEO Content Package",
+    price: "Custom",
     currency: "KES",
-    period: "/month",
-    description: "For high-growth companies and eCommerce brands requiring advanced dominance.",
+    period: "/mo",
+    description: "Complete end-to-end SEO content dominance for scaling brands.",
     features: [
-      "Full eCommerce/Enterprise scale SEO",
-      "Unlimited Target Keywords",
-      "Aggressive Topic Clusters (8+ Assets/mo)",
-      "Premium Link Building outreach",
-      "Custom Data Studio Dashboards",
-      "Executive Consulting (Bi-weekly)",
-      "Dedicated Revenue Strategist"
+      "Full SEO Content Audit",
+      "Topic Cluster Strategy",
+      "High-Volume Content Production",
+      "Landing Pages + Blog Hubs",
+      "Technical SEO Alignments",
+      "Dedicated Revenue Strategist",
+      "Monthly KPI Tracking"
     ],
     highlight: false,
-    cta: "Dominate Market"
+    cta: "Discuss Custom Plan"
   }
 ];
 

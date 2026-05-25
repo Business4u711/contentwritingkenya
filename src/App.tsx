@@ -6,6 +6,7 @@ import { Header } from "./components/Header";
 import { Footer } from "./components/Footer";
 import { MouseEffect } from "./components/MouseEffect";
 import { AIChatAssistant } from "./components/AIChatAssistant";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 // Pages
 import { HomePage } from "./pages/HomePage";
@@ -67,9 +68,10 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="bg-brand-bg min-h-screen selection:bg-brand-primary/30 selection:text-brand-primary text-brand-light font-sans overflow-x-hidden w-full h-full flex flex-col pt-24">
+      <div className="bg-brand-bg min-h-screen selection:bg-brand-primary/30 selection:text-brand-primary text-brand-text font-sans overflow-x-hidden w-full h-full flex flex-col pt-24">
         <MouseEffect />
         <AIChatAssistant />
+        <FloatingWhatsApp />
         <Header />
         
         <AnimatedRoutes />

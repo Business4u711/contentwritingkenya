@@ -21,18 +21,18 @@ export function Hero() {
             className="inline-flex items-center gap-2 mb-6"
           >
             <span className="w-10 h-[1px] bg-brand-primary"></span>
-            <span className="text-brand-primary text-[10px] font-bold uppercase tracking-[0.3em]">Africa's Elite SEO Growth Agency</span>
+            <span className="text-brand-primary text-[10px] font-bold uppercase tracking-[0.3em]">The Premier SEO Writers in Kenya</span>
           </motion.div>
 
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-            className="text-6xl sm:text-7xl lg:text-[100px] font-heading font-black leading-[0.85] tracking-tighter mb-8 uppercase"
+            className="text-6xl sm:text-7xl lg:text-8xl xl:text-[100px] font-heading font-black leading-[0.85] tracking-tighter mb-8 uppercase"
           >
-            Built To <br className="hidden sm:block" />
-            <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-brand-gold)' }}>Rank.</span> Engineered<br className="hidden sm:block" />
-            To Convert.
+            Words That <br className="hidden sm:block" />
+            <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-brand-primary)' }}>Rank.</span> Copy That<br className="hidden sm:block" />
+            Converts.
           </motion.h1>
 
           <motion.p
@@ -41,7 +41,7 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
             className="text-lg md:text-xl text-brand-text-muted max-w-xl mb-10 leading-relaxed font-light"
           >
-            Kenya SEO Experts helps ambitious businesses scale through premium SEO, strategic content marketing, technical optimization, and conversion-focused digital growth systems.
+            Stop wasting budgets on general marketing agencies that write generic copy. Content Writing Kenya delivers elite SEO blog content and aggressive website copywriting designed to dominate Google and capture leads.
           </motion.p>
 
           <motion.div

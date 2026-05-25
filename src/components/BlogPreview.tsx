@@ -4,24 +4,24 @@ import { PlayCircle, ArrowRight } from "lucide-react";
 const posts = [
   {
     category: "Algorithm Updates",
-    title: "How to Survive the Latest Google Core Update with High-EEAT.",
+    title: "How to Rank on Google in Kenya (Definitive Guide).",
     readTime: "8 min read",
     date: "Oct 12, 2026",
     type: "article"
   },
   {
     category: "Technical SEO",
-    title: "The Ultimate Guide to Programmatic SEO for eCommerce Brands.",
+    title: "Why SEO Content Matters for Businesses in Kenya.",
     readTime: "12 min read",
     date: "Sep 28, 2026",
     type: "article"
   },
   {
     category: "Conversion",
-    title: "Why Your Landing Pages Get Traffic But Zero Leads (And How to Fix It).",
+    title: "Content Writing vs Copywriting Explained (Which Do You Need?).",
     readTime: "6 min read",
     date: "Sep 15, 2026",
-    type: "video"
+    type: "article"
   }
 ];
 
@@ -70,10 +70,10 @@ export function BlogPreview() {
                 </div>
                 
                 <h3 className="text-3xl md:text-4xl font-heading font-black text-brand-text leading-tight mb-4 group-hover:text-transparent group-hover:bg-clip-text group-hover:bg-gradient-to-r group-hover:from-brand-text group-hover:to-brand-primary transition-all">
-                  The Blueprint for Building a Billion-Dollar Content Moat.
+                  Why Most Websites Don't Convert Traffic (And How to Fix It).
                 </h3>
                 <p className="text-brand-text-muted font-light max-w-xl text-sm leading-relaxed mb-6 line-clamp-2">
-                  Discover how enterprise SaaS companies use high-velocity content production and technical architecture to monopolize organic search results in competitive markets.
+                  Discover how expert website copywriting and SEO structure transform a standard brochure website into an aggressive lead-generation asset. Learn the exact conversion framework we use.
                 </p>
                 <div className="flex items-center gap-4 text-[10px] uppercase tracking-widest font-bold text-brand-text-faint">
                    <span>45 Min Masterclass</span>
