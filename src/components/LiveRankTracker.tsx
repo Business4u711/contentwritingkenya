@@ -34,8 +34,8 @@ export function LiveRankTracker() {
   }, [data]);
 
   return (
-    <section className="py-24 relative bg-[#0a0a0f] border-t border-white/5 overflow-hidden">
-      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-full bg-brand-gold/5 blur-[120px] rounded-full pointer-events-none" />
+    <section className="py-24 relative bg-brand-surface border-t border-brand-border overflow-hidden">
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[600px] h-full bg-brand-primary/5 blur-[120px] rounded-full pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         
@@ -43,18 +43,18 @@ export function LiveRankTracker() {
           <div className="max-w-2xl">
             <div className="flex items-center gap-3 mb-6">
               <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-gold opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-gold"></span>
+                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-brand-primary opacity-75"></span>
+                <span className="relative inline-flex rounded-full h-3 w-3 bg-brand-primary"></span>
               </span>
-              <span className="uppercase tracking-[0.3em] text-[10px] font-bold text-white/50">Live Global SERP Intelligence</span>
+              <span className="uppercase tracking-[0.3em] text-[10px] font-bold text-brand-text-muted">Live Global SERP Intelligence</span>
             </div>
-            <h2 className="text-3xl md:text-5xl font-heading font-black uppercase tracking-tight text-white leading-tight">
+            <h2 className="text-3xl md:text-5xl font-heading font-black uppercase tracking-tight text-brand-text leading-tight">
               We Don't Guess. <br />
-              <span className="text-white/40">We Monitor Dominance.</span>
+              <span className="text-brand-text-faint">We Monitor Dominance.</span>
             </h2>
           </div>
           
-          <p className="text-white/50 font-light max-w-sm text-sm lg:text-right">
+          <p className="text-brand-text-muted font-light max-w-sm text-sm lg:text-right">
             Our proprietary intelligence engines track enterprise keyword volatility across 40+ global markets in real-time, ensuring our partners never lose market share.
           </p>
         </div>
@@ -62,7 +62,7 @@ export function LiveRankTracker() {
         <div className="w-full overflow-x-auto pb-6">
           <div className="min-w-[800px] ">
             {/* Table Header */}
-            <div className="grid grid-cols-6 gap-4 mb-4 text-[10px] uppercase font-bold tracking-widest text-white/40 border-b border-white/10 pb-4">
+            <div className="grid grid-cols-6 gap-4 mb-4 text-[10px] uppercase font-bold tracking-widest text-brand-text-faint border-b border-brand-border pb-4">
               <div className="col-span-2">Target Semantic Entity</div>
               <div>Search Volume</div>
               <div>User Intent</div>
@@ -76,23 +76,23 @@ export function LiveRankTracker() {
                 <motion.div 
                   key={idx}
                   layout
-                  className="grid grid-cols-6 gap-4 items-center bg-white/5 p-4 border border-white/5 hover:border-brand-gold/30 transition-colors group"
+                  className="grid grid-cols-6 gap-4 items-center bg-brand-surface-light p-4 border border-brand-border hover:border-brand-primary/20 transition-colors group"
                 >
                   <div className="col-span-2 flex items-center gap-3">
-                    <Globe className="w-4 h-4 text-brand-blue flex-shrink-0" />
-                    <span className="text-white font-medium text-sm group-hover:text-brand-gold transition-colors">{item.keyword}</span>
+                    <Globe className="w-4 h-4 text-brand-accent flex-shrink-0" />
+                    <span className="text-brand-text font-medium text-sm group-hover:text-brand-primary transition-colors">{item.keyword}</span>
                   </div>
-                  <div className="text-white/60 font-mono text-xs">{item.volume}</div>
+                  <div className="text-brand-text-muted font-mono text-xs">{item.volume}</div>
                   <div className="text-xs uppercase tracking-widest">
-                    <span className={`px-2 py-1 bg-white/5 text-[9px] font-bold
-                      ${item.intent === 'Commercial' ? 'text-brand-gold' : ''}
-                      ${item.intent === 'Transactional' ? 'text-brand-blue' : ''}
-                      ${item.intent === 'B2B' ? 'text-white' : ''}
+                    <span className={`px-2 py-1 bg-brand-surface-light text-[9px] font-bold
+                      ${item.intent === 'Commercial' ? 'text-brand-primary' : ''}
+                      ${item.intent === 'Transactional' ? 'text-brand-accent' : ''}
+                      ${item.intent === 'B2B' ? 'text-brand-text' : ''}
                     `}>
                       {item.intent}
                     </span>
                   </div>
-                  <div className="font-heading font-black text-xl text-white">#{item.pos}</div>
+                  <div className="font-heading font-black text-xl text-brand-text">#{item.pos}</div>
                   <div>
                     {item.movement > 0 ? (
                       <div className="flex items-center gap-1 text-red-400 font-mono text-xs">
@@ -103,7 +103,7 @@ export function LiveRankTracker() {
                          <ArrowUpRight className="w-3 h-3" /> {Math.abs(item.movement)} (Gained)
                       </div>
                     ) : (
-                      <div className="flex items-center gap-1 text-white/40 font-mono text-xs">
+                      <div className="flex items-center gap-1 text-brand-text-faint font-mono text-xs">
                         - Stable
                       </div>
                     )}

@@ -34,26 +34,26 @@ export function FAQ() {
   const [openIdx, setOpenIdx] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="py-32 relative bg-brand-charcoal overflow-hidden border-t border-white/5">
-      <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-brand-blue/5 to-transparent pointer-events-none" />
+    <section id="faq" className="py-32 relative bg-brand-surface overflow-hidden border-t border-brand-border">
+      <div className="absolute right-0 top-0 w-1/3 h-full bg-gradient-to-l from-brand-accent/5 to-transparent pointer-events-none" />
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         <div className="grid lg:grid-cols-[1fr_1.5fr] gap-16">
           
           <div>
-            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-gold">
-              <span className="w-10 h-[1px] bg-brand-gold"></span>
+            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-primary">
+              <span className="w-10 h-[1px] bg-brand-primary"></span>
               <span>Knowledge Base</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black leading-tight uppercase tracking-tighter mb-6">
               Strategic <br />
               <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-brand-blue)' }}>Intelligence</span>
             </h2>
-            <p className="text-white/60 font-light leading-relaxed mb-8 max-w-sm">
+            <p className="text-brand-text-muted font-light leading-relaxed mb-8 max-w-sm">
               We operate with absolute transparency. Find answers to common questions about our methodology, the SEO timeline, and the ROI you can expect from a partnership.
             </p>
-            <a href="#contact" className="inline-flex items-center gap-3 text-[10px] uppercase tracking-widest font-bold border-b border-white/20 pb-1 hover:border-brand-gold transition-colors">
-              Still have questions? <span className="text-brand-gold">→</span>
+            <a href="#contact" className="inline-flex items-center gap-3 text-[10px] uppercase tracking-widest font-bold border-b border-brand-border pb-1 hover:border-brand-primary transition-colors">
+              Still have questions? <span className="text-brand-primary">→</span>
             </a>
           </div>
 
@@ -64,20 +64,20 @@ export function FAQ() {
                 <div 
                   key={idx} 
                   className={cn(
-                    "glass-panel border border-white/5 transition-all duration-300",
-                    isOpen ? "bg-white/5 border-l-2 border-l-brand-gold" : "hover:border-white/20"
+                    "glass-panel border border-brand-border transition-all duration-300",
+                    isOpen ? "bg-brand-surface-light border-l-2 border-l-brand-gold" : "hover:border-brand-border"
                   )}
                 >
                   <button
                     onClick={() => setOpenIdx(isOpen ? null : idx)}
                     className="w-full px-6 py-6 flex items-center justify-between text-left"
                   >
-                    <span className="font-heading font-bold uppercase tracking-wide text-white/90 text-sm md:text-base">
+                    <span className="font-heading font-bold uppercase tracking-wide text-brand-text text-sm md:text-base">
                       {faq.question}
                     </span>
                     <ChevronDown 
                       className={cn(
-                        "w-5 h-5 text-brand-gold transition-transform duration-300", 
+                        "w-5 h-5 text-brand-primary transition-transform duration-300", 
                         isOpen && "rotate-180"
                       )} 
                     />
@@ -91,7 +91,7 @@ export function FAQ() {
                         transition={{ duration: 0.3 }}
                         className="overflow-hidden"
                       >
-                        <div className="px-6 pb-6 text-white/60 font-light leading-relaxed md:text-sm">
+                        <div className="px-6 pb-6 text-brand-text-muted font-light leading-relaxed md:text-sm">
                           {faq.answer}
                         </div>
                       </motion.div>

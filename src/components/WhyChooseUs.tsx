@@ -26,13 +26,13 @@ const comparisons = [
 
 export function WhyChooseUs() {
   return (
-    <section id="why-us" className="py-32 relative bg-brand-charcoal overflow-hidden border-t border-white/5">
+    <section id="why-us" className="py-32 relative bg-brand-surface overflow-hidden border-t border-brand-border">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         
         <div className="flex flex-col md:flex-row gap-12 justify-between items-end mb-20">
           <div className="max-w-3xl">
-            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-gold">
-              <span className="w-10 h-[1px] bg-brand-gold"></span>
+            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-primary">
+              <span className="w-10 h-[1px] bg-brand-primary"></span>
               <span>The Differentiator</span>
             </div>
             <h2 className="text-4xl md:text-5xl lg:text-7xl font-heading font-black leading-none uppercase tracking-tighter">
@@ -40,18 +40,18 @@ export function WhyChooseUs() {
               <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-white)' }}>Mediocrity.</span>
             </h2>
           </div>
-          <p className="text-white/60 max-w-sm text-lg leading-relaxed md:pb-2 font-light hidden md:block">
+          <p className="text-brand-text-muted max-w-sm text-lg leading-relaxed md:pb-2 font-light hidden md:block">
             While most agencies sell deliverables, we engineer market dominance. Discover the difference between an agency and a growth partner.
           </p>
         </div>
 
         <div className="relative">
-          <div className="absolute top-0 bottom-0 left-1/2 -ml-px w-[2px] bg-white/10 hidden md:block" />
+          <div className="absolute top-0 bottom-0 left-1/2 -ml-px w-[2px] bg-brand-surface-light hidden md:block" />
           
           <div className="grid md:grid-cols-2 gap-8 md:gap-0">
             {/* Left Column - Generic */}
             <div className="md:pr-12 lg:pr-24 space-y-6">
-              <h3 className="text-xl font-heading font-bold uppercase tracking-widest text-white/50 mb-10 pb-4 border-b border-white/10 text-center md:text-right">
+              <h3 className="text-xl font-heading font-bold uppercase tracking-widest text-brand-text-muted mb-10 pb-4 border-b border-brand-border text-center md:text-right">
                 Generic Agencies
               </h3>
               
@@ -62,17 +62,17 @@ export function WhyChooseUs() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="glass-panel p-6 border-white/5 bg-black/40 flex gap-4 items-start"
+                  className="glass-panel p-6 border-brand-border bg-black/40 flex gap-4 items-start"
                 >
-                  <XCircle className="w-5 h-5 text-white/20 shrink-0 mt-0.5" />
-                  <p className="text-white/50 font-light text-sm">{item.generic}</p>
+                  <XCircle className="w-5 h-5 text-brand-text-faint shrink-0 mt-0.5" />
+                  <p className="text-brand-text-muted font-light text-sm">{item.generic}</p>
                 </motion.div>
               ))}
             </div>
 
             {/* Right Column - Kenya SEO Experts */}
             <div className="md:pl-12 lg:pl-24 space-y-6 mt-16 md:mt-0">
-              <h3 className="text-xl font-heading font-bold uppercase tracking-widest text-brand-gold mb-10 pb-4 border-b border-brand-gold/30 text-center md:text-left">
+              <h3 className="text-xl font-heading font-bold uppercase tracking-widest text-brand-primary mb-10 pb-4 border-b border-brand-primary/20 text-center md:text-left">
                 Kenya SEO Experts
               </h3>
               
@@ -83,11 +83,11 @@ export function WhyChooseUs() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
                   transition={{ delay: idx * 0.1 }}
-                  className="glass-panel p-6 border-brand-gold/20 flex gap-4 items-start shadow-[0_0_30px_rgba(197,160,89,0.05)] relative overflow-hidden group"
+                  className="glass-panel p-6 border-brand-primary/20 flex gap-4 items-start shadow-[0_0_30px_rgba(197,160,89,0.05)] relative overflow-hidden group"
                 >
-                  <div className="absolute inset-0 bg-brand-gold/5 group-hover:bg-brand-gold/10 transition-colors pointer-events-none" />
-                  <CheckCircle2 className="w-5 h-5 text-brand-gold shrink-0 mt-0.5 relative z-10" />
-                  <p className="text-white/90 font-medium text-sm relative z-10">{item.elite}</p>
+                  <div className="absolute inset-0 bg-brand-primary/5 group-hover:bg-brand-primary/10 transition-colors pointer-events-none" />
+                  <CheckCircle2 className="w-5 h-5 text-brand-primary shrink-0 mt-0.5 relative z-10" />
+                  <p className="text-brand-text font-medium text-sm relative z-10">{item.elite}</p>
                 </motion.div>
               ))}
             </div>

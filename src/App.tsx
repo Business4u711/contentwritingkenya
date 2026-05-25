@@ -67,7 +67,7 @@ export default function App() {
   return (
     <Router>
       <ScrollToTop />
-      <div className="bg-brand-black min-h-screen selection:bg-brand-gold/30 selection:text-brand-gold text-brand-light font-sans overflow-x-hidden w-full h-full flex flex-col pt-24">
+      <div className="bg-brand-bg min-h-screen selection:bg-brand-primary/30 selection:text-brand-primary text-brand-light font-sans overflow-x-hidden w-full h-full flex flex-col pt-24">
         <MouseEffect />
         <AIChatAssistant />
         <Header />

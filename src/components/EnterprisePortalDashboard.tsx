@@ -25,20 +25,20 @@ export function EnterprisePortalDashboard() {
   const [activeTab, setActiveTab] = useState("traffic");
 
   return (
-    <section className="py-32 relative bg-brand-charcoal overflow-hidden border-t border-white/5">
+    <section className="py-32 relative bg-brand-surface overflow-hidden border-t border-brand-border">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10 w-full">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
-          <div className="flex items-center justify-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-white/50">
-            <span className="w-10 h-[1px] bg-white/20"></span>
+          <div className="flex items-center justify-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-text-muted">
+            <span className="w-10 h-[1px] bg-brand-surface-light"></span>
             <span>Client Command Center</span>
-            <span className="w-10 h-[1px] bg-white/20"></span>
+            <span className="w-10 h-[1px] bg-brand-surface-light"></span>
           </div>
           <h2 className="text-4xl md:text-5xl lg:text-[70px] font-heading font-black leading-none uppercase tracking-tighter mb-8">
             Complete <br />
             <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-white)' }}>Transparency.</span>
           </h2>
-          <p className="text-white/60 font-light max-w-xl mx-auto">
+          <p className="text-brand-text-muted font-light max-w-xl mx-auto">
             Every enterprise partner receives access to our proprietary growth dashboard. Monitor rankings, approve content, and track revenue attribution in real-time.
           </p>
         </div>
@@ -46,54 +46,54 @@ export function EnterprisePortalDashboard() {
         {/* Dashboard Mockup */}
         <div className="relative w-full max-w-5xl mx-auto">
           {/* Decorative Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-brand-blue/20 blur-[120px] z-0 pointer-events-none" />
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[80%] h-[80%] bg-brand-accent/20 blur-[120px] z-0 pointer-events-none" />
           
-          <div className="relative z-10 glass-panel border border-white/10 rounded-xl overflow-hidden shadow-2xl bg-[#0a0a0a]">
+          <div className="relative z-10 glass-panel border border-brand-border rounded-xl overflow-hidden shadow-2xl bg-[#0a0a0a]">
             
             {/* Top Bar */}
-            <div className="h-14 border-b border-white/10 flex items-center justify-between px-6 bg-white/5">
+            <div className="h-14 border-b border-brand-border flex items-center justify-between px-6 bg-brand-surface-light">
               <div className="flex items-center gap-4">
                 <div className="flex gap-1.5">
                   <div className="w-3 h-3 rounded-full bg-red-500/50" />
                   <div className="w-3 h-3 rounded-full bg-yellow-500/50" />
                   <div className="w-3 h-3 rounded-full bg-green-500/50" />
                 </div>
-                <div className="w-px h-4 bg-white/10 mx-2" />
-                <span className="text-white/50 text-[10px] font-bold uppercase tracking-widest">Workspace / Acxelerate Inc.</span>
+                <div className="w-px h-4 bg-brand-surface-light mx-2" />
+                <span className="text-brand-text-muted text-[10px] font-bold uppercase tracking-widest">Workspace / Acxelerate Inc.</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="relative">
-                  <Search className="w-4 h-4 text-white/40 absolute left-2 top-1/2 -translate-y-1/2" />
-                  <input type="text" placeholder="Search metrics..." className="bg-white/5 border border-white/10 rounded-md pl-8 pr-3 py-1 text-xs focus:outline-none w-48 text-white focus:border-brand-blue transition-colors" />
+                  <Search className="w-4 h-4 text-brand-text-faint absolute left-2 top-1/2 -translate-y-1/2" />
+                  <input type="text" placeholder="Search metrics..." className="bg-brand-surface-light border border-brand-border rounded-md pl-8 pr-3 py-1 text-xs focus:outline-none w-48 text-brand-text focus:border-brand-accent transition-colors" />
                 </div>
-                <button className="text-white/40 hover:text-white transition-colors"><Bell className="w-4 h-4" /></button>
-                <div className="w-6 h-6 rounded-full bg-brand-blue/20 border border-brand-blue/50 flex items-center justify-center cursor-pointer">
-                  <span className="text-[10px] font-bold text-brand-blue">AX</span>
+                <button className="text-brand-text-faint hover:text-brand-text transition-colors"><Bell className="w-4 h-4" /></button>
+                <div className="w-6 h-6 rounded-full bg-brand-accent/20 border border-brand-accent/20 flex items-center justify-center cursor-pointer">
+                  <span className="text-[10px] font-bold text-brand-accent">AX</span>
                 </div>
               </div>
             </div>
 
             <div className="flex flex-col md:flex-row min-h-[600px]">
               {/* Sidebar */}
-              <div className="w-full md:w-48 border-b md:border-b-0 md:border-r border-white/10 bg-white/5 p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-visible items-center md:items-stretch h-auto md:h-auto shrink-0">
-                <button className="flex items-center gap-3 px-3 py-2 text-brand-gold bg-brand-gold/10 rounded-md whitespace-nowrap md:whitespace-normal w-full text-left">
+              <div className="w-full md:w-48 border-b md:border-b-0 md:border-r border-brand-border bg-brand-surface-light p-4 flex md:flex-col gap-2 overflow-x-auto md:overflow-x-visible items-center md:items-stretch h-auto md:h-auto shrink-0">
+                <button className="flex items-center gap-3 px-3 py-2 text-brand-primary bg-brand-primary/10 rounded-md whitespace-nowrap md:whitespace-normal w-full text-left">
                   <LayoutDashboard className="w-4 h-4 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">Overview</span>
                 </button>
-                <button className="flex items-center gap-3 px-3 py-2 text-white/50 hover:text-white hover:bg-white/5 rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
+                <button className="flex items-center gap-3 px-3 py-2 text-brand-text-muted hover:text-brand-text hover:bg-brand-surface-light rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
                   <Activity className="w-4 h-4 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">Rankings</span>
                 </button>
-                <button className="flex items-center gap-3 px-3 py-2 text-white/50 hover:text-white hover:bg-white/5 rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
+                <button className="flex items-center gap-3 px-3 py-2 text-brand-text-muted hover:text-brand-text hover:bg-brand-surface-light rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
                   <FileText className="w-4 h-4 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">Content Auth</span>
                 </button>
-                <button className="flex items-center gap-3 px-3 py-2 text-white/50 hover:text-white hover:bg-white/5 rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
+                <button className="flex items-center gap-3 px-3 py-2 text-brand-text-muted hover:text-brand-text hover:bg-brand-surface-light rounded-md transition-colors whitespace-nowrap md:whitespace-normal w-full text-left">
                   <Users className="w-4 h-4 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">Leads CRM</span>
                 </button>
                 
-                <div className="md:mt-auto flex items-center gap-3 px-3 py-2 text-white/30 hover:text-white hover:bg-white/5 rounded-md transition-colors md:border-t md:border-white/10 pt-4 whitespace-nowrap md:whitespace-normal w-full text-left cursor-not-allowed">
+                <div className="md:mt-auto flex items-center gap-3 px-3 py-2 text-brand-text-faint hover:text-brand-text hover:bg-brand-surface-light rounded-md transition-colors md:border-t md:border-brand-border pt-4 whitespace-nowrap md:whitespace-normal w-full text-left cursor-not-allowed">
                   <Settings className="w-4 h-4 shrink-0" />
                   <span className="text-[11px] font-bold uppercase tracking-widest">Settings</span>
                 </div>
@@ -103,45 +103,45 @@ export function EnterprisePortalDashboard() {
               <div className="flex-1 p-6 md:p-8 overflow-hidden flex flex-col h-full w-full max-w-full">
                 <div className="flex flex-col sm:flex-row justify-between sm:items-end gap-4 mb-8">
                   <div>
-                     <h3 className="text-xl font-heading font-bold text-white mb-1">Growth Overview</h3>
-                     <p className="text-white/40 text-xs">Last updated: Just now | Showing Data for Q3</p>
+                     <h3 className="text-xl font-heading font-bold text-brand-text mb-1">Growth Overview</h3>
+                     <p className="text-brand-text-faint text-xs">Last updated: Just now | Showing Data for Q3</p>
                   </div>
-                  <div className="flex text-[10px] uppercase font-bold tracking-widest border border-white/10 rounded divide-x divide-white/10 overflow-hidden text-white/60">
-                    <button className="px-3 py-1 cursor-pointer hover:bg-white/5 bg-transparent transition-colors">7D</button>
-                    <button className="px-3 py-1 cursor-pointer hover:bg-white/5 bg-white/10 text-white transition-colors">30D</button>
-                    <button className="px-3 py-1 cursor-pointer hover:bg-white/5 bg-transparent transition-colors">90D</button>
+                  <div className="flex text-[10px] uppercase font-bold tracking-widest border border-brand-border rounded divide-x divide-white/10 overflow-hidden text-brand-text-muted">
+                    <button className="px-3 py-1 cursor-pointer hover:bg-brand-surface-light bg-transparent transition-colors">7D</button>
+                    <button className="px-3 py-1 cursor-pointer hover:bg-brand-surface-light bg-brand-surface-light text-brand-text transition-colors">30D</button>
+                    <button className="px-3 py-1 cursor-pointer hover:bg-brand-surface-light bg-transparent transition-colors">90D</button>
                   </div>
                 </div>
 
                 <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-6">
                   <button 
                     onClick={() => setActiveTab('traffic')}
-                    className={`bg-white/5 border rounded-lg p-4 text-left transition-colors ${activeTab === 'traffic' ? 'border-brand-blue bg-brand-blue/10' : 'border-white/10 hover:border-brand-blue/30'}`}
+                    className={`bg-brand-surface-light border rounded-lg p-4 text-left transition-colors ${activeTab === 'traffic' ? 'border-brand-accent bg-brand-accent/10' : 'border-brand-border hover:border-brand-accent/20'}`}
                   >
-                     <p className="text-[10px] uppercase font-bold text-white/40 mb-2">Organic Traffic</p>
-                     <p className="text-2xl font-mono text-white mb-2">24,592</p>
-                     <p className="text-[10px] text-brand-blue font-bold">+14.2% vs last mo</p>
+                     <p className="text-[10px] uppercase font-bold text-brand-text-faint mb-2">Organic Traffic</p>
+                     <p className="text-2xl font-mono text-brand-text mb-2">24,592</p>
+                     <p className="text-[10px] text-brand-accent font-bold">+14.2% vs last mo</p>
                   </button>
                   <button 
                     onClick={() => setActiveTab('leads')}
-                    className={`bg-white/5 border rounded-lg p-4 text-left transition-colors ${activeTab === 'leads' ? 'border-brand-gold bg-brand-gold/10' : 'border-white/10 hover:border-brand-gold/30'}`}
+                    className={`bg-brand-surface-light border rounded-lg p-4 text-left transition-colors ${activeTab === 'leads' ? 'border-brand-primary bg-brand-primary/10' : 'border-brand-border hover:border-brand-primary/20'}`}
                   >
-                     <p className="text-[10px] uppercase font-bold text-white/40 mb-2">Qualified Leads</p>
-                     <p className="text-2xl font-mono text-white mb-2">412</p>
-                     <p className="text-[10px] text-brand-gold font-bold">+28.5% vs last mo</p>
+                     <p className="text-[10px] uppercase font-bold text-brand-text-faint mb-2">Qualified Leads</p>
+                     <p className="text-2xl font-mono text-brand-text mb-2">412</p>
+                     <p className="text-[10px] text-brand-primary font-bold">+28.5% vs last mo</p>
                   </button>
                   <button 
                     onClick={() => setActiveTab('revenue')}
-                    className={`bg-white/5 border rounded-lg p-4 text-left transition-colors ${activeTab === 'revenue' ? 'border-green-400 bg-green-400/10' : 'border-white/10 hover:border-green-400/30'}`}
+                    className={`bg-brand-surface-light border rounded-lg p-4 text-left transition-colors ${activeTab === 'revenue' ? 'border-green-400 bg-green-400/10' : 'border-brand-border hover:border-green-400/30'}`}
                   >
-                     <p className="text-[10px] uppercase font-bold text-white/40 mb-2">Est. Revenue Value</p>
-                     <p className="text-2xl font-mono text-white mb-2">$142,500</p>
+                     <p className="text-[10px] uppercase font-bold text-brand-text-faint mb-2">Est. Revenue Value</p>
+                     <p className="text-2xl font-mono text-brand-text mb-2">$142,500</p>
                      <p className="text-[10px] text-green-400 font-bold">+34.1% vs last mo</p>
                   </button>
                 </div>
                 
-                <div className="flex-1 bg-white/5 border border-white/10 rounded-lg p-4 relative w-full h-[300px]">
-                   <p className="text-xs uppercase font-bold text-white/60 mb-4">
+                <div className="flex-1 bg-brand-surface-light border border-brand-border rounded-lg p-4 relative w-full h-[300px]">
+                   <p className="text-xs uppercase font-bold text-brand-text-muted mb-4">
                      {activeTab === 'traffic' ? 'Traffic Trajectory' : 
                       activeTab === 'leads' ? 'Lead Velocity' : 'Revenue Growth'}
                    </p>

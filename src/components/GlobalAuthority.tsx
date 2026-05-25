@@ -3,10 +3,10 @@ import { Globe } from "lucide-react";
 
 export function GlobalAuthority() {
   return (
-    <section id="global" className="py-32 relative bg-brand-charcoal overflow-hidden">
+    <section id="global" className="py-32 relative bg-brand-surface overflow-hidden">
       <div className="absolute inset-0 z-0 opacity-10">
         <svg
-          className="w-full h-full text-white"
+          className="w-full h-full text-brand-text"
           viewBox="0 0 100 100"
           preserveAspectRatio="none"
         >
@@ -15,7 +15,7 @@ export function GlobalAuthority() {
           <path d="M0,30 Q30,70 60,30 T100,50" fill="none" stroke="currentColor" strokeWidth="0.1" />
           <path d="M0,70 Q40,40 70,60 T100,50" fill="none" stroke="currentColor" strokeWidth="0.15" />
           <circle cx="20" cy="40" r="1" fill="currentColor" />
-          <circle cx="50" cy="50" r="1.5" fill="currentColor" className="text-brand-gold" />
+          <circle cx="50" cy="50" r="1.5" fill="currentColor" className="text-brand-primary" />
           <circle cx="80" cy="55" r="1" fill="currentColor" />
           <circle cx="70" cy="65" r="0.8" fill="currentColor" />
           <circle cx="30" cy="60" r="0.8" fill="currentColor" />
@@ -27,9 +27,9 @@ export function GlobalAuthority() {
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
-          className="w-16 h-16 bg-brand-blue/10 flex items-center justify-center mb-8 border border-brand-blue/20"
+          className="w-16 h-16 bg-brand-accent/10 flex items-center justify-center mb-8 border border-brand-accent/20"
         >
-          <Globe className="w-8 h-8 text-brand-blue" />
+          <Globe className="w-8 h-8 text-brand-accent" />
         </motion.div>
         
         <motion.h2
@@ -48,7 +48,7 @@ export function GlobalAuthority() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="text-lg md:text-xl text-white/60 max-w-2xl mb-16 leading-relaxed"
+          className="text-lg md:text-xl text-brand-text-muted max-w-2xl mb-16 leading-relaxed"
         >
           We help brands across Kenya and beyond compete globally through world-class SEO, conversion copywriting, and strategic digital growth.
         </motion.p>
@@ -66,9 +66,9 @@ export function GlobalAuthority() {
             { label: "Content Assets", value: "10k+" },
             { label: "Revenue Generated", value: "$45M+" }
           ].map((stat, idx) => (
-            <div key={idx} className="glass-panel p-8 border-white/5">
-              <h4 className="text-4xl font-heading font-bold text-white mb-2">{stat.value}</h4>
-              <p className="text-[10px] text-brand-gold uppercase tracking-widest font-bold">{stat.label}</p>
+            <div key={idx} className="glass-panel p-8 border-brand-border">
+              <h4 className="text-4xl font-heading font-bold text-brand-text mb-2">{stat.value}</h4>
+              <p className="text-[10px] text-brand-primary uppercase tracking-widest font-bold">{stat.label}</p>
             </div>
           ))}
         </motion.div>

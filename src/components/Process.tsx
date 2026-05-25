@@ -13,21 +13,21 @@ const processes = [
 
 export function Process() {
   return (
-    <section id="process" className="py-32 relative bg-brand-charcoal overflow-hidden">
+    <section id="process" className="py-32 relative bg-brand-surface overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         <div className="text-center max-w-3xl mx-auto mb-20">
           <h2 className="text-5xl md:text-6xl font-heading font-black mb-6 uppercase tracking-tighter">
             The Enterprise <span className="text-transparent" style={{ WebkitTextStroke: '1px var(--color-brand-blue)' }}>Methodology</span>
           </h2>
-          <p className="text-white/60 text-lg font-light">
+          <p className="text-brand-text-muted text-lg font-light">
             A battle-tested process designed to minimize risk and maximize organic revenue.
           </p>
         </div>
 
         <div className="relative">
           {/* Animated Line */}
-          <div className="absolute left-6 md:left-1/2 top-4 bottom-4 w-px bg-white/10 md:-translate-x-1/2" />
+          <div className="absolute left-6 md:left-1/2 top-4 bottom-4 w-px bg-brand-surface-light md:-translate-x-1/2" />
           
           <div className="space-y-12 md:space-y-0">
             {processes.map((process, idx) => (
@@ -44,19 +44,19 @@ export function Process() {
               >
                 {/* Node */}
                 <div className={cn(
-                  "absolute left-6 md:left-auto md:right-0 w-8 h-8 bg-brand-black border-2 border-brand-blue flex items-center justify-center z-10 -translate-x-[15px] md:-translate-x-0 md:translate-x-1/2 top-0 mt-1",
+                  "absolute left-6 md:left-auto md:right-0 w-8 h-8 bg-brand-bg border-2 border-brand-accent flex items-center justify-center z-10 -translate-x-[15px] md:-translate-x-0 md:translate-x-1/2 top-0 mt-1",
                   idx % 2 !== 0 && "md:left-0 md:right-auto md:-translate-x-1/2"
                 )}>
-                  <div className="w-2 h-2 bg-brand-blue" />
+                  <div className="w-2 h-2 bg-brand-accent" />
                 </div>
                 
                 <div className="ml-16 md:ml-0 flex-1">
-                  <div className="glass-panel p-8 border-white/5 hover:border-brand-blue/30 transition-colors">
-                     <span className="text-brand-blue font-bold uppercase tracking-widest text-[10px] mb-3 block">Step {process.step}</span>
-                     <h3 className="text-2xl font-heading font-bold text-white mb-3 uppercase tracking-tight">
+                  <div className="glass-panel p-8 border-brand-border hover:border-brand-accent/20 transition-colors">
+                     <span className="text-brand-accent font-bold uppercase tracking-widest text-[10px] mb-3 block">Step {process.step}</span>
+                     <h3 className="text-2xl font-heading font-bold text-brand-text mb-3 uppercase tracking-tight">
                        {process.title}
                      </h3>
-                     <p className="text-white/50 leading-relaxed font-light">
+                     <p className="text-brand-text-muted leading-relaxed font-light">
                        {process.desc}
                      </p>
                   </div>

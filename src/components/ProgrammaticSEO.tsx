@@ -32,47 +32,47 @@ export function ProgrammaticSEO() {
   const [activeNode, setActiveNode] = useState(nodes[0]);
 
   return (
-    <section className="py-32 relative bg-[#050505] overflow-hidden border-t border-white/5">
+    <section className="py-32 relative bg-brand-bg overflow-hidden border-t border-brand-border">
       {/* Background Graphic */}
       <div className="absolute top-0 right-0 w-full h-[500px] bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCI+CjxyZWN0IHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgZmlsbD0ibm9uZSIvPgo8Y2lyY2xlIGN4PSIyMCIgY3k9IjIwIiByPSIxIiBmaWxsPSJyZ2JhKDI1NSwgMjU1LCAyNTUsIDAuMDUpIi8+Cjwvc3ZnPg==')] opacity-50 z-0" />
-      <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-brand-blue/5 blur-[150px] rounded-full pointer-events-none z-0" />
+      <div className="absolute bottom-0 left-1/4 w-[600px] h-[600px] bg-brand-accent/5 blur-[150px] rounded-full pointer-events-none z-0" />
       
       <div className="max-w-7xl mx-auto px-6 md:px-12 relative z-10">
         
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           
           <div>
-            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-gold">
-              <span className="w-10 h-[1px] bg-brand-gold"></span>
+            <div className="flex items-center gap-2 mb-6 uppercase tracking-[0.3em] text-[10px] font-bold text-brand-primary">
+              <span className="w-10 h-[1px] bg-brand-primary"></span>
               <span>Topical Coverage Matrix</span>
             </div>
             
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black leading-tight uppercase tracking-tighter mb-6 text-white">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-heading font-black leading-tight uppercase tracking-tighter mb-6 text-brand-text">
               Scale at the <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-blue to-brand-gold">Speed of Thought.</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-accent to-brand-primary">Speed of Thought.</span>
             </h2>
             
-            <p className="text-white/60 font-light leading-relaxed mb-8 max-w-lg">
+            <p className="text-brand-text-muted font-light leading-relaxed mb-8 max-w-lg">
               We move beyond traditional keyword research. Our proprietary engines build comprehensive entity graphs, deploying thousands of highly-relevant, conversion-optimized pages programmatically.
             </p>
             
             <div className="space-y-4 mb-10">
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded bg-white/5 border border-white/10 flex items-center justify-center shrink-0 mt-1">
-                  <Database className="w-4 h-4 text-brand-blue" />
+                <div className="w-8 h-8 rounded bg-brand-surface-light border border-brand-border flex items-center justify-center shrink-0 mt-1">
+                  <Database className="w-4 h-4 text-brand-accent" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Entity Salience Mapping</h4>
-                  <p className="text-white/40 text-xs font-light leading-relaxed">Map the exact relationships Google's Knowledge Graph expects to see, ensuring your content satisfies user intent across the entire semantic cluster.</p>
+                  <h4 className="text-brand-text font-bold text-sm uppercase tracking-wider mb-1">Entity Salience Mapping</h4>
+                  <p className="text-brand-text-faint text-xs font-light leading-relaxed">Map the exact relationships Google's Knowledge Graph expects to see, ensuring your content satisfies user intent across the entire semantic cluster.</p>
                 </div>
               </div>
               <div className="flex items-start gap-4">
-                <div className="w-8 h-8 rounded bg-white/5 border border-white/10 flex items-center justify-center shrink-0 mt-1">
-                  <Combine className="w-4 h-4 text-brand-gold" />
+                <div className="w-8 h-8 rounded bg-brand-surface-light border border-brand-border flex items-center justify-center shrink-0 mt-1">
+                  <Combine className="w-4 h-4 text-brand-primary" />
                 </div>
                 <div>
-                  <h4 className="text-white font-bold text-sm uppercase tracking-wider mb-1">Programmatic Architecture</h4>
-                  <p className="text-white/40 text-xs font-light leading-relaxed">Generate hundreds of localized or category-specific landing pages simultaneously, maintaining strict quality control and zero duplication.</p>
+                  <h4 className="text-brand-text font-bold text-sm uppercase tracking-wider mb-1">Programmatic Architecture</h4>
+                  <p className="text-brand-text-faint text-xs font-light leading-relaxed">Generate hundreds of localized or category-specific landing pages simultaneously, maintaining strict quality control and zero duplication.</p>
                 </div>
               </div>
             </div>
@@ -81,17 +81,17 @@ export function ProgrammaticSEO() {
           
           {/* Interactive Graph Node Explorer */}
           <div className="relative">
-            <div className="glass-panel p-1 border-white/10 rounded-2xl overflow-hidden bg-black/40 backdrop-blur-md shadow-2xl relative">
+            <div className="glass-panel p-1 border-brand-border rounded-2xl overflow-hidden bg-black/40 backdrop-blur-md shadow-2xl relative">
               <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-brand-blue/50 to-transparent" />
               
-              <div className="bg-[#0a0a0f] rounded-xl overflow-hidden relative" style={{ height: '450px' }}>
+              <div className="bg-brand-surface rounded-xl overflow-hidden relative" style={{ height: '450px' }}>
                 
                 {/* Node Info Panel */}
-                <div className="absolute top-4 left-4 z-20 bg-white/5 border border-white/10 backdrop-blur-md p-4 rounded-lg w-64">
-                   <p className="text-[10px] uppercase font-bold text-brand-gold tracking-widest mb-1">{activeNode.type}</p>
-                   <h4 className="text-white font-bold mb-2">{activeNode.name}</h4>
-                   <div className="flex items-center gap-2 text-[10px] text-white/40">
-                     <Zap className="w-3 h-3 text-brand-blue" /> AI Synced
+                <div className="absolute top-4 left-4 z-20 bg-brand-surface-light border border-brand-border backdrop-blur-md p-4 rounded-lg w-64">
+                   <p className="text-[10px] uppercase font-bold text-brand-primary tracking-widest mb-1">{activeNode.type}</p>
+                   <h4 className="text-brand-text font-bold mb-2">{activeNode.name}</h4>
+                   <div className="flex items-center gap-2 text-[10px] text-brand-text-faint">
+                     <Zap className="w-3 h-3 text-brand-accent" /> AI Synced
                    </div>
                 </div>
 
@@ -169,13 +169,13 @@ export function ProgrammaticSEO() {
             </div>
             
             {/* Overlay stats */}
-            <div className="absolute -bottom-6 -left-6 bg-brand-charcoal border border-white/10 p-4 rounded-lg shadow-2xl z-30 flex items-center gap-4 hidden sm:flex">
-               <div className="w-12 h-12 bg-white/5 rounded flex items-center justify-center">
-                 <Network className="w-5 h-5 text-brand-blue" />
+            <div className="absolute -bottom-6 -left-6 bg-brand-surface border border-brand-border p-4 rounded-lg shadow-2xl z-30 flex items-center gap-4 hidden sm:flex">
+               <div className="w-12 h-12 bg-brand-surface-light rounded flex items-center justify-center">
+                 <Network className="w-5 h-5 text-brand-accent" />
                </div>
                <div>
-                  <p className="text-[10px] uppercase font-bold text-white/40 tracking-widest">Semantic Nodes Generated</p>
-                  <p className="text-xl font-mono text-white font-bold">14,208</p>
+                  <p className="text-[10px] uppercase font-bold text-brand-text-faint tracking-widest">Semantic Nodes Generated</p>
+                  <p className="text-xl font-mono text-brand-text font-bold">14,208</p>
                </div>
             </div>
           </div>
