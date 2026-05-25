@@ -52,6 +52,7 @@ export function Footer() {
                 { name: 'Case Studies', path: '/case-studies' },
                 { name: 'Industries', path: '/industries' },
                 { name: 'Intelligence Hub', path: '/tools' },
+                { name: 'Location', path: '/location' },
                 { name: 'Contact', path: '/#contact' }
               ].map(link => (
                 <li key={link.name}>

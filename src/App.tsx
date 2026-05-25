@@ -16,6 +16,7 @@ import { CaseStudiesPage } from "./pages/CaseStudiesPage";
 import { ToolsPage } from "./pages/ToolsPage";
 import { ROIAnalyzerPage } from "./pages/ROIAnalyzerPage";
 import { AuditEnginePage } from "./pages/AuditEnginePage";
+import { LocationPage } from "./pages/LocationPage";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -56,6 +57,7 @@ function AnimatedRoutes() {
         <Route path="/tools" element={<PageWrapper><ToolsPage /></PageWrapper>} />
         <Route path="/tools/roi-calculator" element={<PageWrapper><ROIAnalyzerPage /></PageWrapper>} />
         <Route path="/tools/audit" element={<PageWrapper><AuditEnginePage /></PageWrapper>} />
+        <Route path="/location" element={<PageWrapper><LocationPage /></PageWrapper>} />
       </Routes>
     </AnimatePresence>
   );

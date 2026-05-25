@@ -8,7 +8,7 @@ const mainLinks = [
   { name: "Services", href: "/services" },
   { name: "Industries", href: "/industries" },
   { name: "Case Studies", href: "/case-studies" },
-  { name: "Engineering Tools", href: "/tools" },
+  { name: "Location", href: "/location" },
 ];
 
 export function Header() {
