@@ -19,9 +19,13 @@ export function Footer() {
               The #1 premium SEO and content marketing agency in Africa. We build elite digital growth systems for ambitious brands.
             </p>
             <div className="flex gap-4">
-              {['LinkedIn', 'Twitter', 'Instagram'].map(social => (
-                <a key={social} href="#" className="text-brand-primary text-[10px] uppercase font-bold tracking-widest hover:text-brand-text transition-colors">
-                  {social}
+              {[
+                { name: 'LinkedIn', url: 'https://ke.linkedin.com/in/constance-hope-368335367' },
+                { name: 'Truelancer', url: 'https://www.truelancer.com/content-writing-freelancers-in-thika' },
+                { name: 'beBee', url: 'https://bebee.com/ke/services/content-writing/thika' }
+              ].map(social => (
+                <a key={social.name} href={social.url} target="_blank" rel="noopener noreferrer" className="text-brand-primary text-[10px] uppercase font-bold tracking-widest hover:text-brand-text transition-colors">
+                  {social.name}
                 </a>
               ))}
             </div>
